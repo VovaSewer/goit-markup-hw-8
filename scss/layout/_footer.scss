@@ -1,0 +1,93 @@
+.footer{
+  background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-container{
+  display: flex;
+}
+
+.container-footer-box{
+  width: 231px;
+  margin-right: 70px;
+}
+
+.logo-footer {
+  font-family: Raleway;
+  @include font(26px, 700, 31px, 0.03em);
+  color: var(--background-color);
+  text-decoration: none;
+}
+
+.footer-address {
+  @include font(14px, 400, 24px, 0.03em);
+  color: var(--background-color);
+  margin-bottom: 9px;
+}
+
+.footer-contacts {
+  @include font(14px, 400, 24px, 0.03em);
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.container-logo-footer {
+  margin-bottom: 20px;
+}
+
+.footer-mail {
+  margin-bottom: 9px;
+}
+
+.footer-title{
+  @include font(14px, 700, 16px, 0.03em);
+  text-transform: uppercase;
+  color:var(--background-color);
+  margin-bottom: 20px;
+}
+
+.footer-icon-list {
+  @extend %align-center;
+  margin-top: 16px;
+}
+
+.footer-icon-item {
+  &:not(:first-child){
+    @extend %align-items;
+    margin-left: 10px;
+  }
+}
+
+.footer-icon-svg{
+  fill:var(--background-color); 
+}
+
+.footer-icon{
+  padding-top: 12px;
+  margin-right: 93px;
+}
+
+.online-form{
+  padding-top: 12px;
+}
+
+.form-box{
+  display: flex;
+}
+
+.online-input{
+  @include button (358px, 50px, 4px);
+  border: none;
+  background-color: transparent;
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  color: var(--background-color);
+  padding-left: 16px;
+  margin-right: 12px;
+}
+
+.footer-btn-svg{
+  fill:var(--background-color); 
+  margin-left: 10px;
+}

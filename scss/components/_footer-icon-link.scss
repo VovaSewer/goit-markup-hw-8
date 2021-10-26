@@ -1,0 +1,14 @@
+.footer-icon-link{
+  @extend %align-items;
+  @include button (44px, 44px, 50%);
+  background: rgba(255, 255, 255, 0.1);
+  transition: background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  &:hover,
+  &:focus{
+    background-color: var(--accent-color);
+  }
+  & .footer-icon-svg,
+  & .footer-icon-svg{
+    fill:var(--background-color); 
+  }
+}

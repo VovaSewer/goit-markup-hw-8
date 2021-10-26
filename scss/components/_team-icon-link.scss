@@ -1,0 +1,14 @@
+.team-icon-link{
+  @extend %align-items;
+  @include button (44px, 44px, 50%);
+  transition: background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  &:hover,
+  &:focus{
+    background-color: var(--accent-color); 
+    & .team-icon-svg,
+    & .team-icon-svg{
+      fill:var(--background-color); 
+    }
+  }
+}
+

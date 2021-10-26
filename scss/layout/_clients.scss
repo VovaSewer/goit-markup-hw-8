@@ -1,0 +1,37 @@
+.clients{
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.clients-title {
+  @include font(36px, 700, 42px, 0.03em);
+  color: var(--primary-title-color);
+  margin-bottom: 50px;
+}
+
+.clients-list{
+  display: flex;
+  justify-content: center;
+  margin-left: -30px;
+}
+
+.clients-link{
+  @include button (170px, 92px, 4px);
+  @extend %align-items;
+  border: 1px solid #AFB1B8;
+  box-sizing: border-box;
+  margin-left: 30px;
+  transition: border-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  &:hover,
+  &:focus{ 
+    border-color: var(--accent-color);
+    & .clients-icon,
+    & .clients-icon {
+      fill:var(--accent-color);
+    }
+  }
+}  
+
+.clients-icon{
+fill: #AFB1B8;
+}

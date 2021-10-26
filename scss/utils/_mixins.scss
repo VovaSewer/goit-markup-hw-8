@@ -1,0 +1,13 @@
+@mixin font($fz, $fw, $lh, $ls){
+    font-size: $fz;
+    font-weight: $fw;
+    line-height: $lh / $fz;
+    letter-spacing: $ls;
+}
+
+@mixin button ($w, $h, $br, $curs:pointer) {
+    width: $w;
+    height: $h;
+    border-radius: $br;
+    cursor: $curs;
+}

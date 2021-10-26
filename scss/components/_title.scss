@@ -1,0 +1,6 @@
+
+.title {
+  @include font(14px, 700, 16px, 0.03em);
+  text-transform: uppercase;
+  color: var(--primary-title-color);
+}

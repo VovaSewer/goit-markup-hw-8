@@ -1,0 +1,29 @@
+.about {
+  padding-top: 94px;
+}
+
+.about-list {
+  display: flex;
+  margin-left: -30px;
+}
+
+.about-item {
+  flex-basis: calc(100% / 4 - 30px);
+  margin-left: 30px;
+}
+
+.about-icon-bcg{
+  @include button (270px, 120px, 4px);
+  @extend %align-items;
+  background: #F5F4FA;
+  margin-bottom: 30px;
+}
+
+.about-title {
+  margin-bottom: 10px;
+}
+
+.about-text {
+  @include font(14px, 400, 24px, 0.03em);
+  color: var(--secondary-color);
+}
