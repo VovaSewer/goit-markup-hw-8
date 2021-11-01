@@ -23,6 +23,7 @@
   text-align: center;
   margin: 0 auto;
   margin-bottom: 30px;
+  padding: 0 15px;
   color: var(--background-color);
   @media screen and (min-width:1200px) {
   @include font(44px, 900, 60px, 0.06em);

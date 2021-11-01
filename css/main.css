@@ -86,7 +86,9 @@ body {
 }
 
 .header {
+  width: 100%;
   min-width: 320px;
+  min-height: 60px;
   padding-top: 16px;
   padding-bottom: 16px;
   border-bottom: 1px solid #ECECEC;
@@ -116,7 +118,7 @@ body {
 }
 
 .header-list {
-  display: flex;
+  display: none;
 }
 
 .header-item:not(:last-child) {
@@ -192,6 +194,7 @@ body {
   text-align: center;
   margin: 0 auto;
   margin-bottom: 30px;
+  padding: 0 15px;
   color: var(--background-color);
 }
 
@@ -1145,53 +1148,13 @@ textarea::placeholder {
   margin: 0 auto;
 }
 
-.header-menu {
-  width: 100%;
-  padding-right: 10px;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.page-header {
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px;
-}
-
-.page-header .header-menu {
-  min-height: 80px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.menu {
-  display: flex;
-  padding: 0;
-  list-style: none;
-}
-
-@media (max-width: 767px) {
-  .menu {
-    display: none;
-  }
-}
-
-.menu .link {
-  padding: 10px;
-  color: inherit;
-  text-decoration: none;
-}
-
-.menu .link:hover,
-.menu .link:focus {
-  text-decoration: underline;
-}
-
 .menu-toggle {
   min-height: 24px;
   min-width: 24px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
+  margin-left: auto;
   padding: 0;
   background-color: transparent;
   cursor: pointer;
@@ -1200,15 +1163,16 @@ textarea::placeholder {
   outline: none;
 }
 
-@media (min-width: 768px) {
+@media screen and (max-width: 767px) {
   .menu-toggle {
-    display: none;
+    width: 100%;
   }
 }
 
-.menu-toggle:hover,
-.menu-toggle:focus {
-  background-color: rgba(0, 0, 0, 0.1);
+@media (min-width: 1200px) {
+  .menu-toggle {
+    display: none;
+  }
 }
 
 .menu-container {
@@ -1217,7 +1181,7 @@ textarea::placeholder {
   left: 0;
   width: 100vw;
   height: 100vh;
-  padding: 32px;
+  padding: 40px;
   background-color: var(--background-color);
   z-index: 999;
   transform: translateX(100%);
@@ -1230,8 +1194,8 @@ textarea::placeholder {
 
 .menu-container .menu-toggle {
   position: absolute;
-  top: 16px;
-  right: 16px;
+  top: 10px;
+  right: 15px;
   color: var(--primary-title-color);
 }
 
@@ -1241,10 +1205,18 @@ textarea::placeholder {
   list-style: none;
 }
 
-.mobile-menu .link {
+.mobile-link {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.05;
+  letter-spacing: 0.02em;
   display: block;
   padding: 10px;
-  color: #fff;
-  text-decoration: none;
+  color: var(--primary-title-color);
+}
+
+.mobile-link:hover, .mobile-link:focus {
+  background-color: var(--accent-color);
+  transition: background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 /*# sourceMappingURL=main.css.map */

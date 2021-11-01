@@ -24,14 +24,14 @@
     <title>Document</title>
   </head>
   <body>
-    <!-- Шапка сайта-->
+    <!-------------------HEADER---------------------->
     <header class="header">
       <div class="container header__container">
         <nav class="header-nav">
           <a class="header-logo" href=""
             ><span class="header-logo__first">Web</span>Studio</a
           >
-          <ul class="header-list menu list">
+          <ul class="header-list list">
             <li class="header-item">
               <a class="header-link link current" href="./index.html">Студия</a>
             </li>
@@ -43,33 +43,27 @@
             </li>
           </ul>
         </nav>
-        <div class="header-menu">
-          <button
-            class="menu-toggle js-open-menu"
-            aria-expanded="false"
-            aria-controls="mobile-menu"
+        <!-- <div class="header-menu"> -->
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            width="24"
+            height="24"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
           >
-            <svg
-              width="24"
-              height="24"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                clip-rule="evenodd"
-              ></path>
-            </svg>
-          </button>
-
-          <!-- <ul class="menu">
-            <li><a href="" class="link">Студия</a></li>
-            <li><a href="" class="link">Портфолио</a></li>
-            <li><a href="" class="link">Контакт</a></li>
-          </ul> -->
-        </div>
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
+        <!-- </div> -->
         <div class="header-contact">
           <ul class="header-contacts-list list">
             <li class="header-mail-list">
@@ -590,9 +584,11 @@
         </svg>
       </button>
       <ul class="mobile-menu">
-        <li><a href="" class="link">Студия</a></li>
-        <li><a href="./portfolio.html" class="link">Портфолио</a></li>
-        <li><a href="" class="link">Контакты</a></li>
+        <li><a href="" class="mobile-link link">Студия</a></li>
+        <li>
+          <a href="./portfolio.html" class="mobile-link link">Портфолио</a>
+        </li>
+        <li><a href="" class="mobile-link link">Контакты</a></li>
       </ul>
     </div>
     <script
