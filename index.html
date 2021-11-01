@@ -27,10 +27,10 @@
     <!-------------------HEADER---------------------->
     <header class="header">
       <div class="container header__container">
+        <a class="header-logo" href=""
+          ><span class="header-logo__first">Web</span>Studio</a
+        >
         <nav class="header-nav">
-          <a class="header-logo" href=""
-            ><span class="header-logo__first">Web</span>Studio</a
-          >
           <ul class="header-list list">
             <li class="header-item">
               <a class="header-link link current" href="./index.html">Студия</a>
@@ -43,27 +43,7 @@
             </li>
           </ul>
         </nav>
-        <!-- <div class="header-menu"> -->
-        <button
-          class="menu-toggle js-open-menu"
-          aria-expanded="false"
-          aria-controls="mobile-menu"
-        >
-          <svg
-            width="24"
-            height="24"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-              clip-rule="evenodd"
-            ></path>
-          </svg>
-        </button>
-        <!-- </div> -->
+
         <div class="header-contact">
           <ul class="header-contacts-list list">
             <li class="header-mail-list">
@@ -83,6 +63,27 @@
               >
             </li>
           </ul>
+          <!-- <div class="header-menu"> -->
+          <button
+            class="menu-selector js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg
+              width="24"
+              height="24"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+          <!-- </div> -->
         </div>
       </div>
     </header>
@@ -568,7 +569,7 @@
       crossorigin="anonymous"
     ></script>
     <div class="menu-container js-menu-container" id="mobile-menu">
-      <button class="menu-toggle js-close-menu">
+      <button class="menu-selector js-close-menu">
         <svg
           fill="currentColor"
           viewBox="0 0 20 20"
@@ -589,6 +590,32 @@
           <a href="./portfolio.html" class="mobile-link link">Портфолио</a>
         </li>
         <li><a href="" class="mobile-link link">Контакты</a></li>
+      </ul>
+      <ul class="list">
+        <li>
+          <a class="mobile-tel-link link" href="tel:+380961111111">
+            +38 096 111 11 11</a
+          >
+        </li>
+        <li>
+          <a class="mobile-mail-link link" href="mailto:info@devstudio.com">
+            info@devstudio.com
+          </a>
+        </li>
+      </ul>
+      <ul class="mobile-social list">
+        <li class="mobile-social-item">
+          <a class="mobile-social-link link" href="">Instagram</a>
+        </li>
+        <li class="mobile-social-item">
+          <a class="mobile-social-link link" href="">Twitter</a>
+        </li>
+        <li class="mobile-social-item">
+          <a class="mobile-social-link link" href="">Facebook</a>
+        </li>
+        <li class="mobile-social-item">
+          <a class="mobile-social-link link" href="">LinkedIn</a>
+        </li>
       </ul>
     </div>
     <script

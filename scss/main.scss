@@ -3,6 +3,7 @@
 @import './utils/placeholders';
 @import './utils/mixins';
 @import './base/reset'; 
+@import './components/container';
 @import './base/common'; 
 @import './layout/header';
 @import './layout/hero';
@@ -12,7 +13,6 @@
 @import './layout/clients';
 @import './layout/footer';
 @import './layout/portfolio';
-@import './components/container';
 @import './components/btn';
 @import './components/title';
 @import './components/team-icon-link';
