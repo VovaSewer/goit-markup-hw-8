@@ -56,7 +56,6 @@
     @include font(40px, 500, 42px, 0.02em);
     display: block;
     color: var(--primary-title-color);
-    padding-bottom: 32px;
 }
 
 .mobile-tel-link{
@@ -65,7 +64,6 @@
     line-height: 1.18;
     letter-spacing: 0.02em;
     color: var(--accent-color);
-    padding-bottom: 32px;
 }
 
 .mobile-mail-link{
