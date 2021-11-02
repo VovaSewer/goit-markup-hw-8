@@ -1,14 +1,14 @@
-.header-portfolio {
-  border-bottom: 1px solid #ececec;
-}
 
 .projects {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  // padding-top: 94px;
+  // padding-bottom: 94px;
 }
 
 .container-projects {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+  // margin-bottom: 50px;
 }
 
 .projects-title {
@@ -16,8 +16,9 @@
 }
 
 .projects-list {
+  flex-wrap: wrap;
   display: flex;
-  justify-content: center;
+  // justify-content: center;
 }
 
 .projects-link {

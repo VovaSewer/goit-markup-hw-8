@@ -1,6 +1,6 @@
 
 .header {
-  width: 100%;
+
   background-color:#ffffff;
   border-bottom: 1px solid #ECECEC; 
   @media screen and (max-width:768px){
@@ -41,7 +41,7 @@
 
 .header-list {
   display: none;
-  @media screen and (min-width:768px){
+  @media screen and (min-width:768px)and (max-width:1199px){
     display: flex;
     align-items: center;
     margin: 0 auto;
@@ -78,15 +78,15 @@
   } 
 }
 
-.header-nav {
-  @media screen and (min-width:768px){
-    display: block;
-    align-items: center;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
+// .header-nav {
+//   @media screen and (min-width:768px) and (max-width:1199){
+//     display: block;
+//     align-items: center;
+//     justify-content: center;
+//     margin-left: auto;
+//     margin-right: auto;
+//   }
+// }
 
 .header-mail-link,
 .header-tel-link {
@@ -108,9 +108,7 @@
 }
 
 .header-contact {
-  @media screen and (max-width:767px){
     margin-left: auto;
-    }
 }
 
 .header-contacts-list {

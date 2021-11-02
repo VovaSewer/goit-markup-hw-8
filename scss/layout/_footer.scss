@@ -2,16 +2,24 @@
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #2f303a;
-  @media screen and (min-width:1200px) {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
 }
 
 .footer-container{
   @media screen and (min-width:1200px) {
     display: flex;
   }  
+}
+
+.container-footer-box{
+  @media screen and (min-width:768px){
+    padding-left: 76px;
+    margin-right: 165px;  
+  }
+  @media screen and (min-width:1200px){
+    width: 231px;
+    padding-left: 0;
+    margin-right: 70px;
+  }
 }
 
 .footer-logo-box{
@@ -23,19 +31,6 @@
     display: flex;
     margin: 0;
   }
-}
-
-.container-footer-box{
-  @media screen and (min-width:768px){
-    width: 232px; 
-    padding-left: 76px;
-    margin-right: 165px;  
-  }
-  @media screen and (min-width:1200px){
-    padding-left: 0;
-    margin-right: 70px;
-  }
-  
 }
 
 .logo-footer {
@@ -132,21 +127,24 @@
 
 .online-input{
   @include button (100%, 50px, 4px);
+  margin-bottom: 20px;
+  padding-left: 16px;
   border: none;
   background-color: transparent;
   outline: none;
+  cursor: pointer;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   color: var(--background-color);
-  margin-bottom: 20px;
   @media screen and (min-width:768px) {
   @include button (450px, 50px, 4px);
     display: flex;
-    margin: 20px auto;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    
   }
   @media screen and (min-width:1200px) {
     @include button (358px, 50px, 4px);
-    padding-left: 16px;
     margin: 0 12px 0 0;
   }
 }
