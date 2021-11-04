@@ -120,7 +120,6 @@ body {
 @media screen and (max-width: 1199px) {
   .header {
     position: fixed;
-    z-index: 999;
   }
 }
 
