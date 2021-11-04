@@ -23,7 +23,6 @@
   }
   @media screen and (min-width:1200px) {
   margin-bottom: 50px;
-  // justify-content: center;
   }
 }
 
@@ -56,6 +55,7 @@
   }
 }
 
+
 .work-list {
   @media screen and (min-width:768px) {
   display: flex;
@@ -84,7 +84,6 @@
 
 .work-item {
   width: 100%;
-  max-width: 370px;
   display: block;
   background: #ffffff;
   &:hover,
@@ -106,10 +105,18 @@
   }
 }
 
+.work-link{
+  @media screen and (min-width: 768px) and (max-width: 1199px){
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  }
+}
+
 .work-border {
-  display: block;
   padding: 20px 24px;
   border: 1px solid #eeeeee;
+  flex-grow: 1;
 }
 
 .company {

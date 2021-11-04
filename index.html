@@ -92,7 +92,7 @@
           Заказать услугу
         </button>
       </section>
-      <!-- ABOUT US -->
+      <!---------------ABOUT US--------------->
       <section class="about">
         <div class="container">
           <ul class="about-list list">
@@ -147,18 +147,24 @@
           </ul>
         </div>
       </section>
-      <!--WHAT WE DO-->
+      <!----------------------WHAT WE DO--------------------->
       <section class="gallery-section">
         <div class="container">
           <h2 class="gallery-title">Чем мы занимаемся</h2>
           <ul class="galery-list list">
             <li class="gallery-item">
               <div class="galery-item-thumb">
-                <img
-                  src="./images/box1.jpg"
-                  alt="человек и планшет"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="./images/box1.jpg 1x, ./images/box1-2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    src="./images/box1.jpg"
+                    alt="человек и планшет"
+                    width="370"
+                  />
+                </picture>
                 <div class="galery-thumb-box">
                   <p class="galery-thumb-title">Десктопные приложения</p>
                 </div>
@@ -166,11 +172,17 @@
             </li>
             <li class="gallery-item">
               <div class="galery-item-thumb">
-                <img
-                  src="./images/box2.jpg"
-                  alt="ноутбук и человек с телефоном"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="./images/box2.jpg 1x, ./images/box2-2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    src="./images/box2.jpg"
+                    alt="ноутбук и человек с телефоном"
+                    width="370"
+                  />
+                </picture>
                 <div class="galery-thumb-box">
                   <p class="galery-thumb-title">Мобильные приложения</p>
                 </div>
@@ -178,11 +190,17 @@
             </li>
             <li class="gallery-item">
               <div class="galery-item-thumb">
-                <img
-                  src="./images/box3.jpg"
-                  alt="планшет в руках"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="./images/box3.jpg 1x, ./images/box3-2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    src="./images/box3.jpg"
+                    alt="планшет в руках"
+                    width="370"
+                  />
+                </picture>
                 <div class="galery-thumb-box">
                   <p class="galery-thumb-title">Дизайнерские решения</p>
                 </div>
@@ -197,7 +215,27 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="team-list list">
             <li class="team-list__item">
-              <img src="./images/img1.jpg" alt="мужчина с бородой" />
+              <picture>
+                <source
+                  srcset="./images/img1.jpg 1x, ./images/img1-desc.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/img1-tab-1x.jpg 1x,
+                    ./images/img1-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/img1-mob-1x.jpg 1x,
+                    ./images/img1-mob-2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img src="./images/img1.jpg" alt="мужчина с бородой" />
+              </picture>
               <div class="team-list__bottom">
                 <h3 class="team-list__title">Игорь Демьяненко</h3>
                 <p class="team-list__text">Product Designer</p>
@@ -234,7 +272,27 @@
               </div>
             </li>
             <li class="team-list__item">
-              <img src="./images/img2.jpg" alt="девушка блондинка" />
+              <picture>
+                <source
+                  srcset="./images/img2.jpg 1x, ./images/img2-desc.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/img2-tab-1x.jpg 1x,
+                    ./images/img2-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/img2-mob-1x.jpg 1x,
+                    ./images/img2-mob-2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img src="./images/img2.jpg" alt="девушка блондинка" />
+              </picture>
               <div class="team-list__bottom">
                 <h3 class="team-list__title">Ольга Репина</h3>
                 <p class="team-list__text">Frontend Developer</p>
@@ -271,7 +329,27 @@
               </div>
             </li>
             <li class="team-list__item">
-              <img src="./images/img3.jpg" alt="парень улыбается" />
+              <picture>
+                <source
+                  srcset="./images/img3.jpg 1x, ./images/img3-desc.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/img3-tab-1x.jpg 1x,
+                    ./images/img3-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/img3-mob-1x.jpg 1x,
+                    ./images/img3-mob-2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img src="./images/img3.jpg" alt="парень улыбается" />
+              </picture>
               <div class="team-list__bottom">
                 <h3 class="team-list__title">Николай Тарасов</h3>
                 <p class="team-list__text">Marketing</p>
@@ -308,7 +386,27 @@
               </div>
             </li>
             <li class="team-list__item">
-              <img src="./images/img4.jpg" alt="парень серьезный" />
+              <picture>
+                <source
+                  srcset="./images/img4.jpg 1x, ./images/img4-desc.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/img4-tab-1x.jpg 1x,
+                    ./images/img4-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/img4-mob-1x.jpg 1x,
+                    ./images/img4-mob-2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img src="./images/img4.jpg" alt="парень серьезный" />
+              </picture>
               <div class="team-list__bottom">
                 <h3 class="team-list__title">Михаил Ермаков</h3>
                 <p class="team-list__text">UI Designer</p>
