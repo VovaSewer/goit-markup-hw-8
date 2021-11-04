@@ -123,8 +123,23 @@ body {
   }
 }
 
+.header-logo__first {
+  color: var(--accent-color);
+}
+
+.header-list {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .header-list {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+  }
+}
+
 .header-logo {
-  margin-right: auto;
   font-family: Raleway;
   font-size: 24px;
   font-weight: 700;
@@ -141,22 +156,6 @@ body {
     line-height: 1.19231;
     letter-spacing: 0.03em;
     margin-right: 93px;
-  }
-}
-
-.header-logo__first {
-  color: var(--accent-color);
-}
-
-.header-list {
-  display: none;
-}
-
-@media screen and (min-width: 768px) {
-  .header-list {
-    display: flex;
-    align-items: center;
-    margin: 0 auto;
   }
 }
 

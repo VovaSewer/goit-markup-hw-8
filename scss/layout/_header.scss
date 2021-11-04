@@ -8,18 +8,6 @@
   }
 }
 
-.header-logo {
-  margin-right: auto;
-  font-family: Raleway;
-  @include font(24px, 700, 28px, 0.03em);
-  color: #000000;
-  text-decoration: none;
-  @media screen and (min-width:1200px) {
-  @include font(26px, 700, 31px, 0.03em);
-    margin-right: 93px;
-  }
-}
-
 .header-logo__first {
   color: var(--accent-color);
 }
@@ -30,6 +18,17 @@
     display: flex;
     align-items: center;
     margin: 0 auto;
+  }
+}
+
+.header-logo {
+  font-family: Raleway;
+  @include font(24px, 700, 28px, 0.03em);
+  color: #000000;
+  text-decoration: none;
+  @media screen and (min-width:1200px) {
+  @include font(26px, 700, 31px, 0.03em);
+    margin-right: 93px;
   }
 }
 
