@@ -5,6 +5,7 @@
   border-bottom: 1px solid #ECECEC; 
   @media screen and (max-width:1199px){
   position: fixed;
+  z-index: 777;
   }
 }
 
@@ -26,6 +27,9 @@
   @include font(24px, 700, 28px, 0.03em);
   color: #000000;
   text-decoration: none;
+  @media screen and (min-width:1200px){
+    margin-right: 0;
+  }
   @media screen and (min-width:1200px) {
   @include font(26px, 700, 31px, 0.03em);
     margin-right: 93px;
