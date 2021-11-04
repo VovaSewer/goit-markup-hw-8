@@ -11,7 +11,11 @@
 }
 
 .container-footer-box{
-  @media screen and (min-width:768px){
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  @media screen and (min-width:768px) and (max-width:1199px){
     padding-left: 76px;
     margin-right: 165px;  
   }
@@ -19,6 +23,7 @@
     width: 231px;
     padding-left: 0;
     margin-right: 70px;
+    align-items: start;
   }
 }
 
@@ -34,6 +39,7 @@
 }
 
 .logo-footer {
+  display: block;
   font-family: Raleway;
   @include font(26px, 700, 31px, 0.03em);
   color: var(--background-color);
@@ -43,10 +49,10 @@
 
 .footer-address {
   @include font(14px, 400, 24px, 0.03em);
-  text-align: center;
+  font-style: normal  ;
   color: var(--background-color);
   margin-bottom: 8px;
-  @media screen and (max-width:1200px){
+  @media screen and (min-width:1200px){
     margin-bottom: 9px;
   }
 }
@@ -56,20 +62,14 @@
   color: rgba(255, 255, 255, 0.6);
 }
 
-.container-logo-footer {
-  @extend %align-items;
-}
-
 .footer-mail {
   margin-bottom: 8px;
-  text-align: center;
   @media screen and (min-width:1200px){
   margin-bottom: 9px;
   }
 }
 
 .footer-tell{
-  text-align: center;
   @media screen and (max-width:768px){
     margin-bottom: 60px;
   }
@@ -89,7 +89,7 @@
 .footer-icon-list {
   @extend %align-items;
     @media screen and (max-width:768px){
-    margin-bottom: 20px;
+    margin-bottom: 60px;
   }
 }
 
